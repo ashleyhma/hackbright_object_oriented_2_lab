@@ -1,11 +1,12 @@
 """Classes for melon orders."""
 
 class AbstractMelonOrder():
-    shipped = False 
+
 
     def __init__(self, species, qty, country_code = None):
         self.species = species
         self.qty = qty
+        self.shipped = False
 
         if country_code:
             self.country_code = country_code
